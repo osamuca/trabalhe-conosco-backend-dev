@@ -1,3 +1,20 @@
+// require('./config');
+// const mongoose = require('mongoose');
+
+// // mongoose.connect('mongodb://localhost/backend');
+
+// const Schema = mongoose.Schema;
+// // Criação do Schema
+// const picpaySchema = new Schema({
+//     name: String,
+//     description: String,
+//     type: String,
+//     attack: Number,
+//     defense: Number,
+//     height: Number
+// });
+
+// module.exports = picpaySchema;
 require('./config');
 const mongoose = require('mongoose');
 
@@ -6,12 +23,12 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 // Criação do Schema
 const picpaySchema = new Schema({
+    id: String,
     name: String,
-    description: String,
-    type: String,
-    attack: Number,
-    defense: Number,
-    height: Number
+    username: String
+    // attack: Number,
+    // defense: Number,
+    // height: Number
 });
 
 module.exports = picpaySchema;
